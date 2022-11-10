@@ -9,7 +9,7 @@ class CreateCategoryController{
 
     }
     handle(req: Request, res: Response) {
-        const { name, description} = req.body
+        const {name, description} = req.body
         
         this.createCategoryUseCase.execute({name, description})
         
