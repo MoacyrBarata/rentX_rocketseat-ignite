@@ -1,13 +1,7 @@
-FROM node
+FROM node:14.15.4-alpine3.12
 
-WORKDIR /usr/app
+RUN apk add --no-cache bash
 
-COPY package.json ./
+USER node
 
-RUN npm install
-
-COPY . .
-
-EXPOSE 3333
-
-CMD ["npm","run","dev"]
+WORKDIR /home/node/app
