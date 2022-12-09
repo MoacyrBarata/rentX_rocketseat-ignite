@@ -1,7 +1,7 @@
-FROM node:14.15.4-alpine3.12
+FROM node
 
 RUN apk add --no-cache bash
 
 USER node
 
-WORKDIR /home/node/app
+WORKDIR /usr/app
