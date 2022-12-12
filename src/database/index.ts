@@ -8,7 +8,7 @@ createConnection()
 
 getConnectionOptions().then( options =>{
     const newOptions = options as IOptions
-    newOptions.host = 'database';
+    newOptions.host = 'rentx';
     createConnection({
         ...options,
     })
